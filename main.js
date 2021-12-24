@@ -1,5 +1,4 @@
-canvas=document.getElementById(myCanvas);
-canvas = new fabric.Canvas('myCanvas');
+ var canvas = new fabric.Canvas('myCanvas');
 block_y=1;
  block_x=1;
 
@@ -10,7 +9,7 @@ var block_image_object= "";
 
 function new_image(get_image)
 {
-	fabric.Image.fromURl(get_image, function(Img) {
+	fabric.Image.fromURL(get_image, function(Img) {
 		block_image_object = Img; 
 
 		block_image_object.scaleToWidth(block_image_width);
